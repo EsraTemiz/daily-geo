@@ -1,16 +1,58 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Daily Geometry 📐
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Daily Geometry, öğrencilerin geometri konularını seviyelerine uygun şekilde öğrenmelerine yardımcı olmak amacıyla geliştirilen bir eğitim platformudur.
 
-## React Compiler
+Proje; ilkokul, ortaokul ve lise düzeyindeki geometri konularını tek bir uygulama altında sunmayı hedeflemektedir.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Özellikler
+Sınıf seviyelerine göre konu organizasyonu
+İlkokul, ortaokul ve lise içerikleri
+Kullanıcı dostu arayüz
+Responsive tasarım
+React Router ile sayfa yönlendirmeleri
+Genişletilebilir içerik yapısı
+📚 İçerik Alanları
+İlkokul
+Temel geometrik şekiller
+Uzamsal ilişkiler
+Geometrik örüntüler
+Ortaokul
+Açılar
+Çokgenler
+Çember ve daire
+Dönüşüm geometrisi
+Lise
+Üçgenler
+Dörtgenler
+Çokgenler
+Çember
+Analitik Geometri
+🛠️ Kullanılan Teknolojiler
+React
+Vite
+React Router
+Tailwind CSS
+JavaScript
+💻 Kurulum
+git clone https://github.com/EsraTemiz/daily-geo.git
+cd daily-geo
+npm install
+npm run dev
+🎯 Projenin Amacı
 
-## Expanding the ESLint configuration
+Geometri öğrenimini daha erişilebilir ve sistematik hale getirmek için geliştirilmiş bir eğitim uygulamasıdır. Amaç; öğrencilerin seviyelerine uygun içeriklere ulaşabilmeleri, konu tekrarları yapabilmeleri ve ilerleyen sürümlerde etkileşimli alıştırmalarla öğrenmelerini desteklemektir.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔮 Planlanan Özellikler
+Konu özetleri
+Çözümlü örnek sorular
+Mini testler
+İnteraktif etkinlikler
+Öğrenci ilerleme takibi
+Mobil deneyimin geliştirilmesi
+👩‍💻 Geliştirici
+
+Esra Temiz
+
+Matematik mezunu ve geometri öğretmeni. Eğitim teknolojileri ve web geliştirme alanlarında çalışmalar yürütmektedir.
