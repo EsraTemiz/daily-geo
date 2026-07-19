@@ -1,0 +1,14 @@
+
+.context{
+    background-color: blue;
+}
+ul li{
+    padding: 15px;
+}
+ul li:hover{
+transition-duration: 1s;
+font-style: italic;
+color:#193cb8  ;
+}
+
+ 
