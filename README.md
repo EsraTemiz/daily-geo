@@ -51,7 +51,8 @@ npm run dev
 
 🌐 Canlı Demo:
 
-daily-geo-mocha.vercel.app
+daily-geo-git-main-ets-projects-fe2af8d1.vercel.app
+
 
 🎯 Projenin Amacı:
 
