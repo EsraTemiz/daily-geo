@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import  './Navbar.css';
+import  '../styles/Navbar.css';
 import logo from '../assets/math.logo.svg';
 import { FaSearch } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";

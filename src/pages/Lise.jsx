@@ -61,7 +61,7 @@ const Lise = () => {
  }
  </div>
    <div className='border-olive-600 md:w-xl lg:w-80 shadow lg:ml-7 h-80 '>
-   <img className=' sm:w-2xl md:w-xl h-90 sm:object-fill md:object-cover'  alt= 'geometri-gorseli' src={geo}/>
+   <img className=' sm:w-2xl md:w-xl h-90 object-cover'  alt= 'geometri-gorseli' src={geo}/>
    </div>
  </div>
  </div>

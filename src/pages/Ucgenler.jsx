@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Ucgenler = () => {
+
+
+
+
+
   return (
     <div>
-      <p>Üçgenler Burada</p>
+      <p>Ucgenler burada</p>
     </div>
   )
 }

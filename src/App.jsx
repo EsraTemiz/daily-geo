@@ -1,13 +1,13 @@
 
-import './App.css'
+import './styles/App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route,NavLink
 } from "react-router-dom";
-import Lise from './components/Lise';
-import Ucgenler from './components/Ucgenler'
-import Dortgenler from './components/Dortgenler'
-import Cokgenler from './components/Cokgenler'
+import Lise from './pages/Lise';
+import Ucgenler from './pages/Ucgenler'
+import Dortgenler from './pages/Dortgenler'
+import Cokgenler from './pages/Cokgenler'
 // import MainPage from './components/MainPage';
 function App() {
   return (
