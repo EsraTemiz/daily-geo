@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/footer.css'
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";

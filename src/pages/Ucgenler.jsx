@@ -1,17 +1,10 @@
 import React from 'react'
+import SoruAnalizi from '../components/SoruAnalizi'
 
 const Ucgenler = () => {
-
-
-
-
-
-  return (
-    <div>
-      <p>Ucgenler burada</p>
-    </div>
+  return(
+    <SoruAnalizi/>
   )
 }
-
 export default Ucgenler
 
