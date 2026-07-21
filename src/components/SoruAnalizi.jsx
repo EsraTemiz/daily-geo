@@ -5,20 +5,17 @@ export default function SoruAnalizi() {
   const [step, setStep] = useState(0);
 
   return (
+   <div className="grid grid-cols-2 bg-amber-400">
     <div className="max-w-xl mx-auto p-6 pb-10">
-
       <h2 className="text-2xl font-bold mb-4">
         Üçgenler - Soru Analizi
       </h2>
-
       <div className="relative border rounded-lg overflow-hidden shadow-lg ">
-
         <img
           src={Acı}
           alt="Geometri Sorusu"
           className="w-full"
         />
-
         {step >= 1 && (
           <div className="absolute top-10 left-8 bg-yellow-100 p-2 rounded shadow">
             ⚠ Bu soruda ilk dikkat edilmesi gereken nokta:
@@ -61,7 +58,7 @@ export default function SoruAnalizi() {
           Tam Çözüm
         </button>
       </div>
-
+    </div>
     </div>
   );
 }

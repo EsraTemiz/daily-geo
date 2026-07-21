@@ -8,14 +8,14 @@ import Lise from './pages/Lise';
 import Ucgenler from './pages/Ucgenler'
 import Dortgenler from './pages/Dortgenler'
 import Cokgenler from './pages/Cokgenler'
-// import MainPage from './components/MainPage';
+import MainPage from './pages/MainPage';
 function App() {
   return (
     <>
  <BrowserRouter>
   <Navbar />
     <Routes>
-         <Route path="/" element={<h1>Hoşgeldin</h1>} />
+         <Route path="/" element={<MainPage/>} />
         <Route path="/ilkokul" element={<h1>İlkokul Soruları</h1>} />
         <Route path="/ortaokul" element={<h1>Ortaokul Soruları</h1>} />
         <Route path="/lise" element={<Lise/>} />
