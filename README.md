@@ -2,8 +2,7 @@
 
 Daily Geometry 📐
 
-Daily Geometry, öğrencilerin geometri konularını seviyelerine uygun şekilde öğrenmelerine yardımcı olmak amacıyla geliştirilen bir eğitim platformudur.
-Proje; ilkokul, ortaokul ve lise düzeyindeki geometri konularını tek bir uygulama altında sunmayı hedeflemektedir.
+Daily Geometry, öğrencilerin geometri konularını öğrenirken soru çözümlerinde bu sorunun çözümüne nasıl yaklaşacağım,soru çözümüne nereden başlamalıyım,hangi konuları birlikte kullanmam gerekir soruları sorarak küçük ipuçlarıyla soru çözümüne ulaşacakları bir platformdur.
 
 🚀 Özellikler
 
