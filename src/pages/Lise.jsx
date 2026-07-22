@@ -54,7 +54,7 @@ const Lise = () => {
 <h1 className='text-2xl text-olive-800 mb-4'>Konu Başlıkları</h1>
 {konular.map((konu)=>
   (<Link key={konu.path} to={konu.path}>
-   <div className='border-olive-800 p-4 rounded shadow-xl sm:w-2xl lg:w-3xl  m-0.5 hover:bg-olive-500 transition-all duration-300 hover:scale-105'> 
+   <div className='border-olive-800 p-4 rounded shadow-xl sm:w-2xl lg:w-3xl  m-0.5 hover:bg-mustard-500 transition-all duration-300 hover:scale-105'> 
       {konu.title}
    </div>
   </Link>))

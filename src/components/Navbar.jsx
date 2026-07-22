@@ -31,7 +31,7 @@ useEffect(()=>{
   return (
     <div  className=''> 
       {/* upper navbar */}
-  <div className='bg-emerald-600 py-1 shadow-md flex items-center justify-center'>
+  <div className='bg-olive-700  py-1 shadow-md flex items-center justify-center'>
     <div className= 'container sm:flex justify-center items-center '>
    
        <div className='sun m-1 '>
@@ -44,14 +44,14 @@ useEffect(()=>{
       </div>
       {/* search bar*/}
       <div className='group relative m-1.5 '>
-        <input type="text" placeholder='search' className=' mt-1 w-25 sm:w-30 group-hover:w-60 transition-all duration-300 rounded-full border text-olive-800  px-2 py-1 focus:outline-none focus:border-2 focus:border-blue-800' />
+        <input type="text" placeholder='search' className=' mt-1 w-25 sm:w-30 group-hover:w-60 transition-all duration-300 rounded-full border text-olive-800  px-2 py-1 focus:outline-none focus:border-2 focus:border-dark' />
        < FaSearch className=' text-olive-800 absolute top-2 right-0 sm:top-1 sm:translate-y-3 sm:right-3  '/>
       </div>
     </div>
   </div>
 {/* lower navbar */}
 <div className=''>
-  <div className=' h-18 flex items-center justify-between bg-emerald-500 relative '>
+  <div className=' h-18 flex items-center justify-between bg-olive-500  relative '>
    <div className='w-15 h-15'>
         <Link to='/' className=' flex  text-2xl text-olive-800'> 
           <img className='w-15 h-15' src ={logo} alt="logo"/>
@@ -60,7 +60,7 @@ useEffect(()=>{
       </div>
   <div className={ `
   absolute sm:static top-full left-0 w-full sm:w-auto
-    bg-emerald-700 sm:bg-transparent
+  mustard-500 sm:bg-transparent
     shadow-md sm:shadow-none z-50 overflow-hidden
     transition-all duration-300 ease-in-out
     ${isMenuClick ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"}
@@ -76,7 +76,7 @@ useEffect(()=>{
   relative px-3 py-1 rounded transition-all duration-300
   ${isActive ? "text-white font-semibold" : "text-white/80"}
   after:content-[''] after:absolute after:left-0 after:bottom-0
-  after:h-0.5 after:bg-blue-800
+  after:h-0.5 after:bg-dark
   after:transition-all after:duration-300
   ${isActive ? "after:w-full" : "after:w-0 group-hover:after:w-full"}
   `
