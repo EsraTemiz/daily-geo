@@ -1,5 +1,5 @@
 import React from 'react'
-import { GiBrain } from "react-icons/gi";
+  import { GiBrain } from "react-icons/gi";
 import { CiWarning } from "react-icons/ci";
 import { FaFireAlt } from "react-icons/fa";
 import { FaRegLightbulb } from "react-icons/fa6";
@@ -35,7 +35,7 @@ const FeatureSection = () => {
      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-5 '>
         
           {smallCard.map((special) => (
-           <div key={special.id} className='border-olive-500  shadow-lg  rounded-2xl p-3 '>
+           <div key={special.id} className='border-olive-500 shadow-lg bg-white rounded-2xl p-3 '>
             <span className='text-xl text-mustard-500'>{special.icon}</span>
             <h2 className='text-xl text-dark font-bold'>
               {special.title}
