@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaFireAlt } from "react-icons/fa";
 const Hero = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="flex-1">
 
             <span className="inline-block bg-white px-4 py-2 rounded-full shadow text-sm text-olive-800 mb-4">
-              🧠 Çözüm Stratejileri
+            Çözüm Stratejileri
             </span>
 
             <h1 className="text-4xl md:text-6xl font-bold text-olive-900 leading-tight">
@@ -29,7 +29,7 @@ const Hero = () => {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <button className="bg-olive-700 text-white px-6 py-3 rounded-xl shadow hover:scale-105 transition">
-                🔥 Günün Sorusu
+                 <FaFireAlt /> Günün Sorusu
               </button>
 
               <button className="bg-white px-6 py-3 rounded-xl shadow hover:scale-105 transition">
