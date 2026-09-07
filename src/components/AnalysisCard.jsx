@@ -6,23 +6,26 @@ const AnalysisCard = () => {
   {
     id: 1,
     title: "Doğruda Açılar",
-    tag: "TYT"
+    tag: "TYT",
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren"
   },
   {
     id: 2,
     title: "Üçgenlerde Açı",
-    tag: "AYT"
+    tag: "AYT",
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren"
   },
   {
     id: 3,
     title: "Çemberde Teğet",
-    tag: "Yeni Nesil"
+    tag: "Yeni Nesil",
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren"
   }
 ];
   return (
     <div>
   <h2 className="text-3xl font-bold text-olive-700 mb-2">
-    Son Eklenen Analizler
+    Geometri Analizleri
   </h2>
 
   <p className="text-olive-800 text-2xl py-6">
@@ -48,7 +51,9 @@ const AnalysisCard = () => {
       <h3 className="mt-4 text-xl font-semibold text-olive-700">
         {analiz.title}
       </h3>
-
+      <p className='text-olive-800'>
+        {analiz.description}
+      </p>
       <button className="mt-4 text-olive-700 font-medium">
         Analizi İncele →
       </button>

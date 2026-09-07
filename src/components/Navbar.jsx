@@ -32,7 +32,7 @@ useEffect(()=>{
     <div  className=''> 
       {/* upper navbar */}
   <div className='bg-olive-700  py-1 shadow-md flex items-center justify-center'>
-    <div className= 'container sm:flex justify-center items-center '>
+    <div className= 'container flex justify-center items-center gap-3'>
    
        <div className='sun m-1 '>
        {bgColor ? (
@@ -43,9 +43,9 @@ useEffect(()=>{
        
       </div>
       {/* search bar*/}
-      <div className='group relative m-1.5 '>
-        <input type="text" placeholder='search' className=' mt-1 w-25 sm:w-30 group-hover:w-60 transition-all duration-300 rounded-full border text-olive-800  px-2 py-1 focus:outline-none focus:border-2 focus:border-dark' />
-       < FaSearch className=' text-olive-800 absolute top-2 right-0 sm:top-1 sm:translate-y-3 sm:right-3  '/>
+      <div className='group relative  text-center'>
+        <input type="text" placeholder='search' className='mt-1 w-30 sm:w-30 sm:group-hover:w-60 transition-all duration-300 rounded-full border px-3 py-2 pr-10 text-olive-800 focus:outline-none focus:border-2 focus:border-dark' />
+       < FaSearch className='absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-olive-800 '/>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@ useEffect(()=>{
   mustard-500 sm:bg-transparent
     shadow-md sm:shadow-none z-50 overflow-hidden
     transition-all duration-300 ease-in-out
-    ${isMenuClick ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"}
+    ${isMenuClick ? "max-h-96 opacity-100 translate-y-0 bg-olive-700" : "max-h-0 opacity-0 -translate-y-2"}
     sm:max-h-none sm:opacity-100 sm:translate-y-0
   
   `}>
