@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import {Link} from "react-router-dom"
 const AnalysisCard = () => {
      const analizler = [
   {
@@ -54,9 +54,9 @@ const AnalysisCard = () => {
       <p className='text-olive-800'>
         {analiz.description}
       </p>
-      <button className="mt-4 text-olive-700 font-medium">
+      <Link to={`/analizler/${analiz.id} `} className="mt-4 text-olive-700 font-medium">
         Analizi İncele →
-      </button>
+      </Link>
 
     </div>
 

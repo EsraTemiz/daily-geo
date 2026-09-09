@@ -5,6 +5,10 @@ import geo from '../assets/geo-gorsel.svg'
 const Lise = () => {
    const konular=[
    {
+    path:"/lise/dogruda-acilar",
+    title:"Doğruda Açılar"
+   },
+   {
     path:"/lise/ucgenler",
     title:"Üçgenler"
    },

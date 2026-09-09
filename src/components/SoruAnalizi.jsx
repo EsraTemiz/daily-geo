@@ -1,37 +1,36 @@
 import { useState } from "react";
-import Acı from "../assets/d.Acı9.png";
 
-export default function SoruAnalizi() {
+
+export default function SoruAnalizi({title,image,hints,solution}) {
   const [step, setStep] = useState(0);
 
   return (
    <div className="grid grid-cols-2">
     <div className="max-w-xl mx-auto p-6 pb-10">
       <h2 className="text-2xl font-bold mb-4">
-        Üçgenler - Soru Analizi
+     {title}- Soru Analizi
       </h2>
       <div className="relative border rounded-lg overflow-hidden shadow-lg ">
         <img
-          src={Acı}
-          alt="Geometri Sorusu"
+          src={image}
+          alt={title}
           className="w-full"
         />
         {step >= 1 && (
           <div className="absolute top-10 left-8 bg-yellow-100 p-2 rounded shadow">
-            ⚠ Bu soruda ilk dikkat edilmesi gereken nokta:
-            180 derece ile kg arasında doğru orantı kurmak
+          {hints[0]}
           </div>
         )}
 
         {step >= 2 && (
           <div className="absolute bottom-20 right-10 bg-blue-100 p-2 rounded shadow">
-            📌 180 derecede 150 kg ise ..?
+            📌{hints[1]}
           </div>
         )}
 
         {step >= 3 && (
           <div className="absolute bottom-5 left-10 bg-green-100 p-2 rounded shadow">
-            ✅ orantı çözülerek sonuç bulunur.
+            ✅ {solution}
           </div>
         )}
       </div>
