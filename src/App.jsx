@@ -2,7 +2,7 @@
 import './styles/App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { BrowserRouter, Routes, Route,NavLink
+import { BrowserRouter, Routes, Route
 } from "react-router-dom";
 import Lise from './pages/Lise';
 import Ucgenler from './pages/Ucgenler'
@@ -22,6 +22,8 @@ function App() {
         <Route path="/lise/ucgenler" element={<Ucgenler/>}/> 
         <Route path="/lise/dortgenler" element={<Dortgenler/>}/> 
         <Route path="/lise/cokgenler" element={<Cokgenler/>}/> 
+        <Route path="/gunun-sorusu" element={<h1>Günün Sorusu</h1>} />
+        <Route path="/analizler" element={<h1>soruAnalizleri  </h1>} />
         <Route path="/eglence" element={<h1>Eğlenceli Sorular</h1>} />
         <Route path="/zeka" element={<h1>Zeka Soruları</h1>} />
     </Routes>

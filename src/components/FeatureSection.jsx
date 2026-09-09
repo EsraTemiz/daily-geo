@@ -30,7 +30,7 @@ const FeatureSection = () => {
   return (
     
     <div className='text-center max-w-3xl mx-auto'>
-      <h2 className='text-4xl text-olive-700 font-bold py-3'> Neden Daily Geometry?</h2>
+      <h2 className='text-4xl text-olive-700 font-bold mb-7'> Neden Daily Geometry?</h2>
       <p className='text-xl text-olive-800 mt-4'> Geometriyi yalnızca çözmeyi değil, doğru düşünmeyi hedefleyen bir öğrenme deneyimi.</p>
      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-5 '>
         

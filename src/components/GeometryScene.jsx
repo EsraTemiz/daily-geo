@@ -17,13 +17,12 @@ const GeometryScene = () => {
  
 
   return (
-     
-    <section ref ={sectionRef} className={`geometry-scene px-6 py-16 bg-dark text-cream/20 overflow-hidden transition-all duration-700 ${isVisible ?"opacity-100 translate-y-0":"opacity-0 translate-y-8"}`}>
+    <section ref ={sectionRef} className={`geometry-scene px-6 py-16 bg-dark text-mustard-500/60 overflow-hidden transition-all duration-700 ${isVisible ?"opacity-100 translate-y-0":"opacity-0 translate-y-8"}`}>
       <div className=" max-w-7xl mx-auto"> 
         <div className='text-center space-y-4 '>
         <p className='text-sm uppercase tracking-widest font-medium'>Bugünün geometrisi</p>
 
-        <h2 className='text-4xl font-bold md:leading-2  '>Geometri Sahnesinde Bugün</h2>
+        <h2 className='text-4xl font-bold md:leading-4  '>Geometri Sahnesinde Bugün</h2>
 
         <p className='text-base'>
           Geometriye biraz farklı bir açıdan bak.
