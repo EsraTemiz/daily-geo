@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFireAlt } from "react-icons/fa";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { GiBrain } from "react-icons/gi";
 import {Link} from "react-router-dom"
+import Aci2 from "../assets/dogrudaAci2.png" 
+import GununSorusuModal from './GununSorusuModal';
+
 const Hero = () => {
+  // !günün sorusu Modal
+const [isModalOpen,setisModalOpen]=useState(false);
   return (
     <div>
        <section className="bg-olive-100 md:min-h-screen ">
@@ -29,9 +34,9 @@ const Hero = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link to="/gunun-sorusu" className="bg-olive-700 text-white px-6 py-3 rounded-xl shadow hover:scale-105 transition">
+              <button onClick={()=>setisModalOpen(true)} className="bg-olive-700 text-white px-6 py-3 rounded-xl shadow hover:scale-105 transition" >
               <span className='flex justify-center items-center'><FaFireAlt className='text-mustard-500  mr-2' /> Günün Sorusu</span> 
-              </Link>
+              </button>
 
               <Link to="/analizler" className="bg-white px-6 py-3 rounded-xl shadow hover:scale-105 transition">
                <span className='flex justify-center items-center'><MdOutlineLibraryBooks className='text-mustard-500 mr-2'/> Son Analizler</span>
@@ -49,7 +54,7 @@ const Hero = () => {
                <span className='inline-flex items-center font-semibold text-olive-700 '><FaFireAlt className='text-mustard-500  mr-2' /> Günün Sorusu</span> 
               
               <div className="mt-4 h-56 bg-gray-100 rounded-xl flex items-center justify-center">
-                Soru Görseli
+               <img src={Aci2}/>
               </div>
 
               <h3 className="mt-5 text-xl text-olive-800 font-bold">
@@ -73,7 +78,7 @@ const Hero = () => {
         </div>
 
       </div>
-      
+      {isModalOpen && (<GununSorusuModal onClose={()=>setisModalOpen(false)}/>)}
     </section>
     </div>
   )

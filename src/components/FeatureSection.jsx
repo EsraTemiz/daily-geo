@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
   import { GiBrain } from "react-icons/gi";
 import { CiWarning } from "react-icons/ci";
 import { FaFireAlt } from "react-icons/fa";
@@ -27,6 +27,7 @@ const FeatureSection = () => {
   description:"Herhangi bir konuda soru çözerken en çok neye dikkat etmelisin"
 }
   ]
+ 
   return (
     
     <div className='text-center max-w-3xl mx-auto'>
