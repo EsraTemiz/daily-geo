@@ -1,15 +1,22 @@
-import React from 'react'
-import Aci2 from "../assets/dogrudaAci2.png" 
+import React, { useState } from 'react'
+import gununSorusu from '../data/gununSorusu.js'
+import { LiaWindowClose } from "react-icons/lia";
 const GununSorusuModal = ({onClose}) => {
+  const [steps,setStep]=useState(0);
   return (
     <div>
       <div className='fixed inset-0 bg-black/50 flex items-center justify-center'>
          
-         <div className='bg-white p-8 rounded-2xl'>
-          <img  src={Aci2}/>
+         <div className='bg-white max-w-2xl p-8 rounded-2xl flex flex-col gap-4'>
+          <h3>{gununSorusu.title}</h3>
+          <img  src={gununSorusu.image}/>
+          <p>{gununSorusu.hints[steps]}</p>
+            {steps < gununSorusu.hints.length -1 && (<button className=" bg-purple-400 self-start rounded p-2" onClick={()=>setStep(steps+1)}>ipuçları</button> )}
          </div>
-         <button className=' border-2 rounded ml-1 bg-olive-500 p-1' onClick={onClose}>Kapat</button>
+         
+          <button className=' border-2 rounded ml-1 bg-olive-500 p-1' onClick={onClose}> <LiaWindowClose /></button>
       </div>
+     
     </div>
   )
 }
