@@ -3,12 +3,12 @@ import { FaFireAlt } from "react-icons/fa";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { GiBrain } from "react-icons/gi";
 import {Link} from "react-router-dom"
-import GununSorusuModal from './GununSorusuModal';
+
 import GununSorusuCard from './GununSorusuCard';
 
 const Hero = () => {
-  // !günün sorusu Modal
 const [isModalOpen,setisModalOpen]=useState(false);
+const onClose=()=>setisModalOpen(false);
   return (
     <div>
        <section className="bg-olive-100 md:min-h-screen ">
@@ -46,10 +46,10 @@ const [isModalOpen,setisModalOpen]=useState(false);
           </div>
 
           {/* Sağ Taraf */}
-           <GununSorusuCard/>
+           <GununSorusuCard onClose={onClose} isModalOpen={isModalOpen}/>
         </div>
       </div>
-      {isModalOpen && (<GununSorusuModal onClose={()=>setisModalOpen(false)}/>)}
+    
     </section>
     </div>
   )
