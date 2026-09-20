@@ -1,11 +1,13 @@
 import { useState } from "react";
+import SolveOpen from "./SolveOpen";
 
 
-export default function SoruAnalizi({title,image,hints,solution}) {
+export default function SoruAnalizi({title,image,hints}) {
   const [step, setStep] = useState(0);
+  const [isSolveOpen,setisSolveOpen]=useState(false);
 
   return (
-   <div className="grid grid-cols-2">
+   <div className="grid grid-cols-2 bg-amber-300">
     <div className="max-w-xl mx-auto p-6 pb-10">
       <h2 className="text-2xl font-bold mb-4">
      {title}- Soru Analizi
@@ -30,7 +32,7 @@ export default function SoruAnalizi({title,image,hints,solution}) {
 
         {step >= 3 && (
           <div className="absolute bottom-5 left-10 bg-green-100 p-2 rounded shadow">
-            ✅ {solution}
+            ✅ {hints[2]}
           </div>
         )}
       </div>
@@ -54,10 +56,13 @@ export default function SoruAnalizi({title,image,hints,solution}) {
           onClick={() => setStep(3)}
           className="px-4 py-2 bg-olive-500 text-white rounded"
         >
-          Tam Çözüm
+         ipUcu 3
         </button>
-      </div>
+    
+        <button onClick={()=>setisSolveOpen(true)}>Tam Çözüm</button>
+      </div>   
     </div>
+     {isSolveOpen && <SolveOpen/>}
     </div>
   );
 }

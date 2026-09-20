@@ -29,7 +29,7 @@ const GununSorusuCard = ({onClose,isModalOpen}) => {
 
             </div>
           </div>
-          {isModalOpen && (<GununSorusuModal title={title} hints={hints} image={image} onClose={onClose} />)}
+          {isModalOpen && (<GununSorusuModal title={title} hints={hints} image={image} onClose={onClose}  />)}
        
             
     </div>
