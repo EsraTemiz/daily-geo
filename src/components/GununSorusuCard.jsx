@@ -2,9 +2,10 @@ import React  from 'react'
 import { FaFireAlt } from "react-icons/fa";
 import gununSorusu from '../data/gununSorusu.js';
 import GununSorusuModal from './GununSorusuModal.jsx';
-import { useState } from "react";
+import { useState} from "react";
+import { Link } from "react-router-dom";
 const GununSorusuCard = ({onClose,isModalOpen}) => {
- const {image,hints,title, description}=gununSorusu
+ const {image,hints,title, description,solutionImage,topic}=gununSorusu
     // !günün sorusu Modal
 
   return (
@@ -22,14 +23,13 @@ const GununSorusuCard = ({onClose,isModalOpen}) => {
 
               <p className="mt-3 text-gray-600">
                {description}
+             
               </p>
-              <button className="mt-5 w-full   text-white py-3 rounded-xl">
-                Analizi İncele
-              </button>
-
+              
+              
             </div>
           </div>
-          {isModalOpen && (<GununSorusuModal title={title} hints={hints} image={image} onClose={onClose}  />)}
+          {isModalOpen && (<GununSorusuModal title={title} hints={hints} image={image} onClose={onClose}  solutionImage={solutionImage} topic={topic}/>)}
        
             
     </div>
