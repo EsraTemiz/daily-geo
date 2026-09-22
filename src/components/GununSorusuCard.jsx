@@ -11,8 +11,6 @@ const ay = String(bugun.getMonth() + 1).padStart(2, "0");
 const gun = String(bugun.getDate()).padStart(2, "0");
 
 const bugununTarihi = `${yil}-${ay}-${gun}`;
-
-
 console.log(bugununTarihi);
  const gununSorusu=gununSoruları.find(e=>e.date===bugununTarihi);
  const { image, hints, title, description, solutionImage, topic } = gununSorusu;
