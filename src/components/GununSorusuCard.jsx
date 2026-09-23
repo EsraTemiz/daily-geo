@@ -19,10 +19,9 @@ console.log(bugununTarihi);
   return (
     <div>
          <div className="flex-1">
-
-            <div className="bg-white  rounded-3xl shadow-xl p-6">
+            <div className="bg-white  max-w-xl rounded-3xl shadow-xl p-6">
                <span className='inline-flex items-center font-semibold text-olive-700 '><FaFireAlt className='text-mustard-500  mr-2' /> Günün Sorusu</span> 
-              <div className="mt-4 max-h-auto bg-gray-100 rounded-xl flex items-center justify-center">
+              <div className="mt-4  bg-gray-100 rounded-xl flex items-center justify-center">
               { gununSorusu && <img src={image}/>} 
               </div>
               <h3 className="mt-5 text-xl text-olive-800 font-bold">

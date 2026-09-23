@@ -2,14 +2,8 @@ import React from 'react'
 import SoruAnalizi from '../components/SoruAnalizi'
 import Ucgen from '../assets/ucgen.png'
 import gununSorusu from '../data/gununSorusu';
+import bugununTarihi from '../utils/tarih';
 const Ucgenler = () => {
-  const bugun = new Date();
-
-const yil = bugun.getFullYear();
-const ay = String(bugun.getMonth() + 1).padStart(2, "0");
-const gun = String(bugun.getDate()).padStart(2, "0");
-
-const bugununTarihi = `${yil}-${ay}-${gun}`;
   const topic="ucgenler";
   const bugundeKal = gununSorusu.find(
   e => e.date === bugununTarihi && e.topic === topic
