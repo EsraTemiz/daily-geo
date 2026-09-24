@@ -8,7 +8,7 @@ const gununSoruları =[
     {
     id:1,
     title:"Doğruda Açı ",
-    date:"2026-09-21",
+    date:"2026-09-24",
     image:Aci2,
     description:"Bu soruda öğrenciler tek değişkene bağlı açıyı yazmak gerektiğini dikkate almıyor",
     topic:"dogruda-acilar",
