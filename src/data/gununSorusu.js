@@ -4,6 +4,7 @@ import aci2Cozum from "../assets/dogrudaAci2.png"
 import UcgendeAcı2 from "../assets/UcgendeAcı2.png"
 import Ucgen2Cozum from "../assets/UcgendeAcı2Sonuc.png"
 import Dortgen1 from "../assets/dortgen1.png"
+import GununTarihi from "../utils/tarih"
 const gununSoruları =[
     {
     id:1,
@@ -36,7 +37,7 @@ const gununSoruları =[
    },
    {
     id:3,
-    date:"2026-09-23",
+    date:"2026-09-25",
     title:"Dörtgenler",
     image:Dortgen1,
     description:"öğrenciler burada dik üçgen ve ikizkenar yamuk bağlantısın kurmalıdır. ",
@@ -50,5 +51,11 @@ const gununSoruları =[
    }
 
 ];
-
+ const today=GununTarihi;
+ const todayQuestion=gununSoruları.find(soru=>soru.date===today);
+ const sortedQuestions=[...gununSoruları].sort((a ,b)=>
+  { return new Date(b.date) - new Date(a.date);
+ });
+const bannerQuestion=todayQuestion ||sortedQuestions[0]
+export { bannerQuestion };
 export default gununSoruları;
