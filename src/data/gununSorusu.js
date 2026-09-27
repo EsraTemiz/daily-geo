@@ -37,7 +37,7 @@ const gununSoruları =[
    },
    {
     id:3,
-    date:"2026-09-25",
+    date:"2026-09-27",
     title:"Dörtgenler",
     image:Dortgen1,
     description:"öğrenciler burada dik üçgen ve ikizkenar yamuk bağlantısın kurmalıdır. ",
@@ -58,4 +58,5 @@ const gununSoruları =[
  });
 const bannerQuestion=todayQuestion ||sortedQuestions[0]
 export { bannerQuestion };
+export {todayQuestion}
 export default gununSoruları;

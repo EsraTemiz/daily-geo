@@ -2,10 +2,11 @@ import React from 'react'
 import gununSoruları from '../data/gununSorusu';
 import SoruAnalizi from '../components/SoruAnalizi';
 import bugununTarihi from '../utils/tarih';
+
 const Dortgenler = () => {
 const topic="dortgenler"; 
 
-const yeniSoru=gununSoruları.find(e=>e.date===bugununTarihi && e.topic===topic)
+const yeniSoru=gununSoruları.find(e => e.date===bugununTarihi && e.topic===topic)
   return (
     <div>
       <p>Dörtgenler Burada</p>
