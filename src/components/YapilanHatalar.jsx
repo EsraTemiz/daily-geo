@@ -1,42 +1,24 @@
 import React from 'react'
-
+import {hatalar} from '../data/sikYapilanHatalar.js'
+import '../styles/app.css'
 const YapilanHatalar = () => {
+  
   return (
     <div className=' '>
      <h3  className='text-olive-700 text-2xl font-bold mb-4 '>Sık Yapılam Hatalar</h3>
-     <div className=' rounded-2xl p-4 '>
-        <details className='text-olive-500  shadow '>
-        <summary className='p-3 '>
-       İkizkenar Üçgende Yüksekliğin görevleri Hakkında
+     <div className='   '>
+       { hatalar.map(e=>
+        <details key={e.id} className='text-olive-500  shadow rounded-2xl '>
+        <summary className='p-3'>
+        {  e.title}  
         </summary>
-        <p className='p-3'>
-           İkizkenarda yükseklik hem açıortay hem kenarortaydır .
+          <p className='p-3 text-olive-800 bg-olive-200 rounded-b-2xl overflow-hidden
+    max-h-0 transition-all duration-300 ease-in-out  '>
+            {e.description}
         </p>
      </details>
-        <details className='text-olive-500 shadow'>
-        <summary className='p-3 '>
-         ikizkenar üçgende taban açılarına ait yükseklik eşitliği
-        </summary>
-        <p className='p-3'>
-       sorularda bu yüksekliklerden biri verilmişse diğerini çizmeyi unutmak yada bun kullanacağını unutmak.
-        </p>
-     </details>
-        <details className='text-olive-500 shadow'>
-        <summary className='p-3 '>
-        Yardımcı elemanların kesişim noktaları ile ilgili.
-        </summary>
-        <p className='p-3'>
-          Bu tanımları bilmiyor olmak ve bunları kullanmayı gözardı etmek
-        </p>
-     </details>
-        <details className='text-olive-500 shadow'>
-        <summary className='p-3 '>
-       Alan paylaştırmada S 'leme mantığında
-        </summary>
-        <p className='p-3'>
-         Alanda taban oranı verilen iki üçgenin Yüksekliklerinin aynı olması gerektiğine dikkat etmemek.
-        </p>
-     </details>
+       )
+       }  
      </div>
     </div>
   ) 

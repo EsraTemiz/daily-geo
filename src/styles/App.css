@@ -12,5 +12,8 @@ body.dark {
   background-color: black;
   color:whitesmoke;
   }
+  details[open] p {
+  max-height:200px;
+  }
   
   

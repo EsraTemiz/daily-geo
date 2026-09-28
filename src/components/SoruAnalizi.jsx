@@ -7,7 +7,7 @@ export default function SoruAnalizi({title,image,hints,solutionImage}) {
   const [isSolveOpen,setisSolveOpen]=useState(false);
 
   return (
-   <div className="grid md:grid-cols-2">
+   <div className="grid md:grid-cols-2  ">
     <div className="max-w-xl mx-auto p-6 pb-10">
       <h2 className="text-2xl font-bold mb-4">
      {title}- Soru Analizi
@@ -62,7 +62,8 @@ export default function SoruAnalizi({title,image,hints,solutionImage}) {
         <button  className ="bg-blue-300 px-4 py-2 rounded" onClick={()=>setisSolveOpen(true)}>Tam Çözüm</button>
       </div>   
     </div>
-     {isSolveOpen && <SolveOpen solutionImage={solutionImage}/>}
+    <div className={`bg-olive-200 transition-all duration-500 overflow-hidden ${isSolveOpen ? "max-h-1000" : "max-h-0"}`}>  <SolveOpen solutionImage={solutionImage} /></div>
+   
     </div>
   );
 }
