@@ -1,6 +1,6 @@
 import React from 'react'
 import {hatalar} from '../data/sikYapilanHatalar.js'
-import '../styles/app.css'
+import '../styles/App.css'
 const YapilanHatalar = () => {
   
   return (
@@ -8,7 +8,7 @@ const YapilanHatalar = () => {
      <h3  className='text-olive-700 text-2xl font-bold mb-4 '>Sık Yapılam Hatalar</h3>
      <div className='   '>
        { hatalar.map(e=>
-        <details key={e.id} className='text-olive-500  shadow rounded-2xl '>
+        <details key={e.id} className='hatalar text-olive-500  shadow rounded-2xl '>
         <summary className='p-3'>
         {  e.title}  
         </summary>
