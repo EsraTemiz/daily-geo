@@ -14,8 +14,10 @@ function App() {
   return (
     <>
  <BrowserRouter>
-  <Navbar />
-    <Routes>
+ <div className=' flex flex-col min-h-screen'>
+   <Navbar />
+  <main className='f'>
+      <Routes>
          <Route path="/" element={<MainPage/>} />
         <Route path="/ilkokul" element={<h1>İlkokul Soruları</h1>} />
         <Route path="/ortaokul" element={<h1>Ortaokul Soruları</h1>} />
@@ -29,7 +31,10 @@ function App() {
         <Route path="/eglence" element={<h1>Eğlenceli Sorular</h1>} />
         <Route path="/zeka" element={<h1>Zeka Soruları</h1>} />
     </Routes>
+  </main>
       <Footer/>
+ </div>
+ 
   </BrowserRouter>
     </>
   )

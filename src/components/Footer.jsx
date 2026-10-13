@@ -5,21 +5,52 @@ import { MdOutlineMail } from "react-icons/md";
 const Footer = () => {
 
   return (
-<div>
-    <div className='relative '>
-  <div className=' fixed flex  items-center shadow-md  bg-olive-700 w-full h-7 bottom-0 '> 
-      <div className= 'container flex items-center justify-evenly '>
-      <IoLogoInstagram className='m-2 size-5 text-olive-800 hover:text-olive-300' />
-      <div className='w-1 h-7 border-0 bg-olive-800'></div>
-      <FaPhoneSquareAlt className='m-2 size-5 text-olive-800  hover:text-olive-300' />
-      <div className='w-1 h-7 border-0 bg-olive-800'></div>
-      <MdOutlineMail className='m-2 size-6 text-olive-800  hover:text-olive-300' />
-      </div>
-   
-  </div>
+<>
   
+  <footer className='  bg-olive-700 text-olive-100 shadow-md '> 
+      <div className= 'container  mx-auto px-6 py-8 '>
+        {/* proje Hakkında */}
+     <div className='p-5 border-b border-olive-900'>
+      <h3 className='text-olive-900 text-lg mb-2'>Proje Hakkında</h3>
+        <p>Daily Geometry ,günlük sorular üzerinden Geometriyi öğrenme açısından ipuçları ile öğrenciyi yönlendirerek çözüme kendisinin ulaşmasını sağlamak için tasarlanmıştır</p>
+     </div>
+       {/* Kısayollar */}
+     <div className='p-5 border-b border-olive-900'>
+      <h3 className='text-olive-900 text-lg'>KısaYollar</h3>
+     </div>
+     {/* İletişim Bilgileri */}
+    <div className=' flex justify-evenly items-center  border-b border-olive-900 '>
+  <div className='p-5 flex items-center'>
+    <a href="#">
+      <IoLogoInstagram className='m-2 size-5  hover:text-olive-900' />
+    </a>
+    <p>Instegram</p>
+  </div>
+  <div className='p-5 flex items-center'>
+    <a href="">
+     <FaPhoneSquareAlt className='m-2 size-5   hover:text-olive-900' />
+    </a>
+  <p>Telefon</p>
+  </div>
+  <div className='p-5 flex items-center'>
+    <a href="">
+     <MdOutlineMail className='m-2 size-6   hover:text-olive-900' />
+    </a>
+  
+  <p>Mail</p>
+  </div>    
+ </div>
+   
+     {/* Alt Bilgi */}
+<div className="mt-6  pt-4 text-center text-sm">
+  <p>© 2026 Daily Geometry. Tüm hakları saklıdır.</p>
 </div>
-</div>
+  </div>
+   
+  </footer>
+  
+</>
+
   )
 }
 

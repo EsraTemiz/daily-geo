@@ -8,7 +8,6 @@ const topic="dortgenler";
 const yeniSorular=gununSoruları.filter(e => e.topic===topic)
   return (
     <div>
-      <p>Dörtgenler Burada</p>
      {yeniSorular.map(e=>
       <SoruAnalizi
       title={e.title}

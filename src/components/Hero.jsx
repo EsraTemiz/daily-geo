@@ -12,6 +12,7 @@ const onClose=()=>setisModalOpen(false);
   return (
     <div>
        <section className="bg-olive-100 md:min-h-screen ">
+        
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Sol Taraf */}
