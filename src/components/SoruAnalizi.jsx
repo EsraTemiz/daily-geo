@@ -7,12 +7,12 @@ export default function SoruAnalizi({title,image,hints,solutionImage}) {
   const [isSolveOpen,setisSolveOpen]=useState(false);
 
   return (
-   <div className="grid md:grid-cols-2 ">
+   <div className="grid md:grid-cols-2 mb-0.5 ">
     <div className="max-w-xl mx-auto p-6 pb-10">
       <h2 className="text-2xl font-bold mb-4">
      {title}- Soru Analizi
       </h2>
-      <div className="relative border rounded-lg overflow-hidden shadow-lg ">
+      <div className="relative border rounded-lg overflow-hidden shadow-lg  ">
         <img
           src={image}
           alt={title}
