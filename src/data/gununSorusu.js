@@ -5,6 +5,8 @@ import UcgendeAcı2 from "../assets/UcgendeAcı2.png"
 import Ucgen2Cozum from "../assets/UcgendeAcı2Sonuc.png"
 import Dortgen1 from "../assets/dortgen1.png"
 import GununTarihi from "../utils/tarih"
+import paralelkenar from "../assets/paralelkenar.png"
+import paralelkenarCozum from "../assets/paralelkenarCevap.png"
 const gununSoruları =[
     {
     id:1,
@@ -48,6 +50,20 @@ const gununSoruları =[
     "Karenin kenar Eşitliğini yerleştirip sonuca ulaş."
   ],
     solutionImage:Dortgen1
+   },
+    {
+    id:4,
+    title:"Dörtgenler ",
+    date:"2026-11-04",
+    image:paralelkenar,
+    description:"Bu soruda dikkat etmek gereken nokta katlanan parçayı geri açarak çözüme başlamak",
+    topic:"dortgenler",
+    hints:[
+    " parçayı geri açtıkktan sonra eşit açıları yerleştir",
+    "üçgeni ikizkenar olduğuna dikkat et",
+    "üçgenin iç açılar toplamından tepe açısına ulaş ve doğruda açı U kuralından açı tamamla "
+  ],
+    solutionImage:paralelkenarCozum
    }
 
 ];
