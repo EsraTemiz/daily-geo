@@ -1,26 +1,56 @@
 
-import React from 'react'
+import React, { useRef } from 'react'
 import {Link} from "react-router-dom"
+import DogrudaAci from "../assets/dogrudaAci2.png"
+import UcgendeAci from "../assets/UcgendeAcı2.png"
+import paralelkenar from "../assets/paralelkenar.png"
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 const AnalysisCard = () => {
+  const sliderRef=useRef(null)
      const analizler = [
   {
     id: 1,
     title: "Doğruda Açılar",
     tag: "TYT",
-    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren"
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
+    questionImage:DogrudaAci,
+    topic:"dogruda-acilar"
   },
+  {
+    id: 4,
+    title: "Doğruda Açılar",
+    tag: "TYT",
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
+    questionImage:DogrudaAci,
+    topic:"dogruda-acilar"
+  },
+
   {
     id: 2,
     title: "Üçgenlerde Açı",
     tag: "AYT",
-    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren"
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
+    questionImage:UcgendeAci,
+     topic:"ucgenler"
+
   },
   {
     id: 3,
-    title: "Çemberde Teğet",
+    title: "Dörtgenler",
     tag: "Yeni Nesil",
-    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren"
-  }
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
+    questionImage:paralelkenar,
+    topic:"dortgenler"
+  },
+  {
+    id: 5,
+    title: "Dörtgenler",
+    tag: "Yeni Nesil",
+    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
+    questionImage:paralelkenar,
+    topic:"dortgenler"
+  },
 ];
   return (
     <div>
@@ -31,15 +61,24 @@ const AnalysisCard = () => {
   <p className="text-olive-800 text-2xl py-6">
     Geometri sorularına farklı bakış açıları kazandıran analizler.
   </p>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className='flex justify-center items-center gap-4 w-full
+  '>
+      <div onClick={()=>sliderRef.current.scrollBy({
+          left:-340,
+          behavior:"smooth"
+        })} className='w-15 h-15 bg-olive-300 rounded-full flex justify-center items-center cursor-pointer'>
+     
+        <FaArrowLeft  className='font-bold text-olive-700 text-3xl'/>
+        </div>
+  <div ref={sliderRef} className=" flex-1 min-w-0 flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory items-center">
 {analizler.map((analiz) => (
-  <div
+  <div 
     key={analiz.id}
-    className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition"
+    className="shrink-0 w-[320px] snap-start bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition "
   >
 
     <div className="h-48 bg-gray-200 flex items-center justify-center">
-      Görsel
+   <img src={analiz.questionImage} alt={analiz.title} className="w-full h-full object-cover" />
     </div>
 
     <div className="p-5">
@@ -51,10 +90,10 @@ const AnalysisCard = () => {
       <h3 className="mt-4 text-xl font-semibold text-olive-700">
         {analiz.title}
       </h3>
-      <p className='text-olive-800'>
+      <p className='text-olive-800'> 
         {analiz.description}
       </p>
-      <Link to={`/analizler/${analiz.id} `} className="mt-4 text-olive-700 font-medium">
+      <Link to={`/lise/${analiz.topic}`} className="mt-4 text-olive-700 font-medium">
         Analizi İncele →
       </Link>
 
@@ -62,6 +101,11 @@ const AnalysisCard = () => {
 
   </div>
 ))}
+  </div>
+   <div onClick={()=>sliderRef.current.scrollBy({
+          left:340,
+          behavior:"smooth"
+        })}   className='w-15 h-15 bg-olive-300 rounded-full flex justify-center items-center'><FaArrowRight className='font-bold text-olive-700 text-3xl' /></div>
   </div>
   
     </div>
