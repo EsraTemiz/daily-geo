@@ -1,11 +1,14 @@
 
 import React, { useRef } from 'react'
 import {Link} from "react-router-dom"
-import DogrudaAci from "../assets/dogrudaAci2.png"
+import DogrudaAci from "../assets/dogrudaAci2soru.png"
 import UcgendeAci from "../assets/UcgendeAcı2.png"
 import paralelkenar from "../assets/paralelkenar.png"
+import cokgen from "../assets/cokgen.png"
+import cember from "../assets/cember.png"
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import '../styles/AnalysisCard.css'
 const AnalysisCard = () => {
   const sliderRef=useRef(null)
      const analizler = [
@@ -19,11 +22,11 @@ const AnalysisCard = () => {
   },
   {
     id: 4,
-    title: "Doğruda Açılar",
-    tag: "TYT",
-    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
-    questionImage:DogrudaAci,
-    topic:"dogruda-acilar"
+    title: "Çemberde Açı",
+    tag: "AYT",
+    description:"çemberde açıda teğet kiriş özelliklerini doğru kullan",
+    questionImage:cember,
+    topic:"cember"
   },
 
   {
@@ -45,11 +48,11 @@ const AnalysisCard = () => {
   },
   {
     id: 5,
-    title: "Dörtgenler",
-    tag: "Yeni Nesil",
-    description:"Karşılıklı, tümler ve bütünler açı ilişkilerini çıkarım yaparak çözmeyi öğren",
-    questionImage:paralelkenar,
-    topic:"dortgenler"
+    title: "Çokgenler",
+    tag: "AYT-TYT",
+    description:"katlama sorularında kenar eşitlikleri göstermeye dikkat etmelisin",
+    questionImage:cokgen,
+    topic:"cokgenler"
   },
 ];
   return (
@@ -61,16 +64,16 @@ const AnalysisCard = () => {
   <p className="text-olive-800 text-2xl py-6">
     Geometri sorularına farklı bakış açıları kazandıran analizler.
   </p>
-  <div className='flex justify-center items-center gap-4 w-full
+  <div className='flex justify-center items-center gap-6 w-full mt-4 p-5
   '>
       <div onClick={()=>sliderRef.current.scrollBy({
           left:-340,
           behavior:"smooth"
-        })} className='w-15 h-15 bg-olive-300 rounded-full flex justify-center items-center cursor-pointer'>
+        })} className='w-10 h-10 md:w-15 md:h-15 bg-olive-300 rounded-full flex justify-center items-center cursor-pointer'>
      
         <FaArrowLeft  className='font-bold text-olive-700 text-3xl'/>
         </div>
-  <div ref={sliderRef} className=" flex-1 min-w-0 flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory items-center">
+  <div ref={sliderRef} className=" flex-1 min-w-0 flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory items-center scrollbar-hidden">
 {analizler.map((analiz) => (
   <div 
     key={analiz.id}
@@ -103,9 +106,9 @@ const AnalysisCard = () => {
 ))}
   </div>
    <div onClick={()=>sliderRef.current.scrollBy({
-          left:340,
+          left:344,
           behavior:"smooth"
-        })}   className='w-15 h-15 bg-olive-300 rounded-full flex justify-center items-center'><FaArrowRight className='font-bold text-olive-700 text-3xl' /></div>
+        })}   className='w-10 h-10 md:w-15 md:h-15 bg-olive-300 rounded-full flex justify-center items-center'><FaArrowRight className='font-bold text-olive-700 text-3xl' /></div>
   </div>
   
     </div>

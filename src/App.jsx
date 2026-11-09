@@ -10,6 +10,7 @@ import Dortgenler from './pages/Dortgenler'
 import Cokgenler from './pages/Cokgenler'
 import MainPage from './pages/MainPage';
 import DogrudaAci from './pages/DogrudaAci'
+import Cember from './pages/Cember';
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/lise/dortgenler" element={<Dortgenler/>}/> 
         <Route path="/lise/cokgenler" element={<Cokgenler/>}/> 
         <Route path="/lise/dogruda-acilar" element={<DogrudaAci/>}/>
+        <Route path="/lise/cember" element={<Cember/>}/>
         <Route path="/gunun-sorusu" element={<h1>Günün Sorusu</h1>} />
         <Route path="/analizler" element={<h1>soruAnalizleri  </h1>} />
         <Route path="/eglence" element={<h1>Eğlenceli Sorular</h1>} />
